@@ -1,0 +1,25 @@
+name: Nuget Package Deploy
+
+on: 
+ push:
+   branches: 
+     - master
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2     
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
+    - name: Restore Nuget
+      run: nuget restore  Xamarin.Android.HoverView/Xamarin.Android.HoverView.csproj
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
+    - name: Build with dotnet
+      run: msbuild Xamarin.Android.HoverView/Xamarin.Android.HoverView.csproj -property:Configuration=Release
+    - name: Pack with nuget
+      run: nuget pack Xamarin.Android.HoverView.nuspec
+    - name: Push Package to nuget
+      run: dotnet nuget push **/*.nupkg
+             --api-key ${{ secrets.nugetapikey }}
+             --source https://api.nuget.org/v3/index.json
