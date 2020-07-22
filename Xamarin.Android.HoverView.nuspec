@@ -16,7 +16,7 @@
   </metadata>
    <files>      
       <!--Android--> 
-	  <file src="XamarinToolTip\bin\Release\Xamarin.Android.HoverView.dll" target="lib\MonoAndroid90" />  	 
-	  <file src="XamarinToolTip\bin\Release\Xamarin.Android.HoverView.pdb" target="lib\MonoAndroid90" />  	 
+	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.dll" target="lib\MonoAndroid90" />  	 
+	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.pdb" target="lib\MonoAndroid90" />  	 
     </files>
 </package>
