@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Xamarin.Android.HoverView</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Xamarin.Android.HoverView</title>
     <authors>Emil Alipiev</authors>
     <owners>EmilAlipiev</owners>
@@ -10,13 +10,13 @@
     <projectUrl>https://github.com/EmilAlipiev/Xamarin.Android.HoverView</projectUrl>
 	<repository type="git" url="https://github.com/EmilAlipiev/Xamarin.Android.HoverView" />
     <description>HoverView and custom tooltip popup for Xamarin.Android projects</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>Android 10 update</releaseNotes>
     <tags>Xamarin, Xamarin.Android, ToolTips, ToolTip, Popup, Hover</tags>    
 	<license type="expression">MIT</license>
   </metadata>
    <files>      
       <!--Android--> 
-	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.dll" target="lib\MonoAndroid90" />  	 
-	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.pdb" target="lib\MonoAndroid90" />  	 
+	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.dll" target="lib\MonoAndroid10" />  	 
+	  <file src="Xamarin.Android.HoverView\bin\Release\Xamarin.Android.HoverView.pdb" target="lib\MonoAndroid10" />  	 
     </files>
 </package>
